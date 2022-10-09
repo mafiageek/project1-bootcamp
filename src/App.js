@@ -1,16 +1,21 @@
 import React from "react";
-import logo from "./logo.png";
 import "./App.css";
+import NavBar from "./NavBar";
+import Jumbotron from "./Jumbotron";
+import Search from "./Search";
+import AddNew from "./AddNew";
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      <NavBar />
+      <Jumbotron />
+      <Search />
+      <AddNew />
     </div>
   );
 }
